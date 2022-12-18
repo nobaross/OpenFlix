@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <title> OPEN_MOVIES_REVIEW</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<h3 style="text-align: center; text-decoration: underline;"> EVALUATION OF BOX OFFICE MOVIES BASED ON REVIEWS,BOX OFFICE INFORMATION AND RATINGS</h3>
+<body>
+ </div>
+ <div>
+ <div id="title" style="text-align: center;">
+ </div>
+</div>
+</body>
+<script>
+window.onload =()=>{
+  document.body.style.backgroundColor = "#8f9685";
+//console.log("ouch")
+var url ="http://localhost:1004/api/csv/title_max_rated_for_each_genre";
+var xhttp = new XMLHttpRequest()
+xhttp.open("GET",url,true)
+xhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200) {
+    var title = JSON.parse(this.responseText);
+    var one = document.getElementById('title')
+    var arrayLength = title[1].length;
+    for(var i = 0;i<arrayLength;i++){
+    one.innerHTML = one.innerHTML +'movie:'+ JSON.stringify(title[1][i]['movie_title'])+'<br>'+'Rated:'+JSON.stringify(title[1][i]['maxRating'])+'<br>'+'genre:'+JSON.stringify(title[1][i]['genre_name'])+'<br><br>';  
+    } 
+  }
+}
+xhttp.send();
+}
+</script>
+</html>

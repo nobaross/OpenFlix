@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "admin",
+    "database": "imdb2",
+    "host": "127.0.0.1",
+    "port":"1101",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "admin",
+    "database": "imdb2",
+    "host": "127.0.0.1",
+    "port":"1101",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "admin",
+    "database": "imdb2",
+    "host": "127.0.0.1",
+    "port":"1101",
+    "dialect": "mysql"
+  }
+}
