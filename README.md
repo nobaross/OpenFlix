@@ -1,6 +1,6 @@
-Welcome to OpenMovies!
+Welcome to Openflix!
 
-OpenMovies is a platform that provides users with a curated selection of the best movies in each genre, using data from IMDB. Whether you're looking for the latest blockbuster or a classic masterpiece, our platform makes it easy to find the perfect movie for any occasion.
+OpenFlix is a platform that provides users with a curated selection of the best movies in each genre, using data from IMDB. Whether you're looking for the latest blockbuster or a classic masterpiece, our platform makes it easy to find the perfect movie for any occasion.
 
 The project includes various files that work together to make this platform functional. These files are organized into different directories:
 
@@ -30,6 +30,6 @@ server.js: This file is the entry point of the application and runs the server. 
 
 To run the project, you should have Node.js and npm installed. You can then install the dependencies by running npm install and start the server by running npm start.
 
-We hope you enjoy using OpenMovies and finding the perfect movie to watch. If you have any feedback or suggestions, please don't hesitate to contact us.
+We hope you enjoy using OpenFlix and finding the perfect movie to watch. If you have any feedback or suggestions, please don't hesitate to contact us.
 
-Thank you for choosing OpenMovies!
+Thank you for choosing Openflix!
